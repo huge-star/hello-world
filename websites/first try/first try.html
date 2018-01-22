@@ -28,16 +28,25 @@
             define bold and italic text, respectively, while strong  
             and em  indicate that the text is "important".
         </p>
-        <a href = "https://www.google.com" target="_blank">
+        <!-- <a href = "https://www.google.com" target="_blank"> -->
         <img src = "9d8a6b589a477d4fbe602a5da2763501.png"
              alt="shit fuck your browser"
              height="50%"
              width="200%"
-             border="5px" />
-        </a>
-
+             border="5px"
+             id="haha"
+             onClick="mssclick()" />
+        <!-- </a> -->
+        
 
         
 
     </body>
+    <script>
+        function mssclick() {
+            a=document.getElementById("haha");
+            a.style.height = "100px";
+            a.style.width = "50px";
+        }
+    </script>
 </html>
