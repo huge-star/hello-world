@@ -1,0 +1,19 @@
+#maintext {
+    color:rgb(182, 146, 216);
+    background-color:beige;
+}
+
+.bigtext em {
+    font-size: larger;
+}
+
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+   font-weight: bold;
+}
+p.sansserif {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+p.monospace {
+   font-family: "Courier New", Courier, monospace;
+}

@@ -3,23 +3,26 @@
         <title>
             MY WEBSITE
         </title>
+        <link rel="stylesheet" href="stysheet.css">
     </head>
     <body>
+        <div id="maintext">
         This is my first html file!
         <h1 align = "center">
             World of Wonder
         </h1>
-        <p> This should be the first paragragh</p>
-        <p> And this won't be the last</p>
-        <p> What if I don't want spaces bewteen two paragraghs? 
+        <p class="serif"> This should be the first paragragh</p>
+        <p class="sansserif"> And this won't be the last</p>
+        <p class="bigtext"> What if <em>shit</em>I don't want spaces bewteen two paragraghs? 
             Can I get rid of it?</p>
-        <p> Seems that I can get <big><big>one</big></big> <br /> But how to delete it? 
+        <p class="monospace"> Seems that I can get <big><big>one</big></big> <br /> But how to delete it? 
             ps: In fact, they got some thing different</p>
 
         <p> It can "create a line-break 
             without an extra space between the text blocks"</p>
         <p> <ins>Wow, look up!
         <b>"big"</b> can be used multiple times!</ins></p>
+        </div>
         <hr width = "100px" />  <!-- here is a wierd crappy comments-->
         <p align = "right">
             Browsers display
@@ -29,7 +32,7 @@
             and em  indicate that the text is "important".
         </p>
         <!-- <a href = "https://www.google.com" target="_blank"> -->
-        <img src = "9d8a6b589a477d4fbe602a5da2763501.png"
+        <img src = "/Users/fanxilai/github/hello-world/websites/first try/9d8a6b589a477d4fbe602a5da2763501.png"
              alt="shit fuck your browser"
              height="50%"
              width="200%"
@@ -37,7 +40,22 @@
              id="haha"
              onClick="mssclick()" />
         <!-- </a> -->
-        
+        <ol>
+            <li>shit</li>
+            <li>fuck</li>
+            <li>I can't remember more</li>
+        </ol>
+        <table border="100" align= "center">
+            <tr>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <td>135</td>
+                <td colspan="2" align="center" bgcolor="0x0F0F0F">246</td>
+            </tr>
+        </table>
 
         
 
@@ -45,8 +63,8 @@
     <script>
         function mssclick() {
             a=document.getElementById("haha");
-            a.style.height = "100px";
-            a.style.width = "50px";
+            a.style.height = "100%";
+            a.style.width = "50%";
         }
     </script>
 </html>
