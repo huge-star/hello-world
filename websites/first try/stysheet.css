@@ -1,19 +1,52 @@
 #maintext {
     color:rgb(182, 146, 216);
-    background-color:beige;
+    background-image: url("/Users/fanxilai/github/hello-world/websites/first try/polymagnet.png");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 
 .bigtext em {
     font-size: larger;
 }
 
+
+#title {
+    border: 5px solid gray;
+    width: 100%;
+    height: 90px;
+    background-color: #87cefa;
+}
+
 p.serif {
    font-family: "Times New Roman", Times, serif;
    font-weight: bold;
+   text-decoration: overline;
+   text-indent: 30px;
+   text-shadow: 10px -1px 4px rgba(128, 128, 128, 0.623);
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   word-spacing: 15px;
 }
 p.sansserif {
-   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-family: Arial, "Helvetica Neue",
+   Helvetica, sans-serif;
+   text-transform: capitalize;
+   letter-spacing: -1px;
 }
 p.monospace {
    font-family: "Courier New", Courier, monospace;
+}
+
+ol.lower-alpha{
+    list-style: lower-alpha outside none;
+}
+
+#table{
+    border-collapse: separate;
+    border-spacing: 20px 50px;
+    caption-side: top;
+}
+a:hover{
+    color: red;
+    cursor: pointer;
 }
