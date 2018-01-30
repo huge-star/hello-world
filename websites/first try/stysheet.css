@@ -2,7 +2,16 @@
     color:rgb(182, 146, 216);
     background-image: url("/Users/fanxilai/github/hello-world/websites/first try/polymagnet.png");
     background-repeat: repeat-y;
+    background-size: contain;
     background-attachment: fixed;
+    height: 150px;
+    width: 500px;
+    overflow: scroll;
+}
+
+#maintext :first-child{
+    color: green;
+    text-decoration: underline;
 }
 
 .bigtext em {
@@ -12,10 +21,32 @@
 
 #title {
     border: 5px solid gray;
-    width: 100%;
+    width: 95%;
     height: 90px;
-    background-color: #87cefa;
+    background: -moz-linear-gradient(deepskyblue, black);
+    position: fixed;
+    z-index: 2;
+    border-radius: 25px 0px 15px 0px;
+    box-shadow: inset 5px 5px 5px 5px #aaaaaa,
+                5px 5px 5px 5px #aaaaaa,
+                inset 5px 5px 5px 5px #87cefa;
+    transition: transform 2s ease;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
+
+#title:hover{
+    transform: translate(0px,100px) scale(1.1);
+}
+
+@keyframes colorchange {
+   5% {background-color: rgba(255, 0, 0, 0.651);}
+   50% {background-color: rgba(0, 128, 0, 0.507);}
+   95% {background-color: rgba(0, 0, 255, 0.466);}
+} 
 
 p.serif {
    font-family: "Times New Roman", Times, serif;
@@ -26,7 +57,17 @@ p.serif {
    text-transform: uppercase;
    letter-spacing: 5px;
    word-spacing: 15px;
+   position: relative;
+   top: 150px;
+   left: 50px;
+   z-index: 1;
 }
+
+#serif::first-letter{
+    font-size: 200%;
+    float: left;
+}
+
 p.sansserif {
    font-family: Arial, "Helvetica Neue",
    Helvetica, sans-serif;
@@ -46,7 +87,29 @@ ol.lower-alpha{
     border-spacing: 20px 50px;
     caption-side: top;
 }
+
+
 a:hover{
     color: red;
     cursor: pointer;
+}
+
+table{
+    transition: border 2s;
+}
+
+#table:hover{
+    border: 50px solid black;
+}
+
+img.image{
+    float: right;
+    width: 50px;
+    border: 10px solid rgba(250, 115, 115, 0.514);
+    transition: transform 0.5s ease;
+}
+
+img.image:hover{
+    transform: rotate(20deg);
+    transform-origin: 30% 30%;
 }
