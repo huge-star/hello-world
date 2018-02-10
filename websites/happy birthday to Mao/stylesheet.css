@@ -1,0 +1,32 @@
+@keyframes colorchange {
+   0% {background-color: #DCA32A;}
+   50% {background-color: #2385B9;}
+   100% {background-color: #DCA32A;}
+} 
+
+body {
+    margin: 0px -20px 0px -20px;
+    background-color: #DCA32A;
+}
+
+.image:hover {
+
+}
+
+.image1 {
+    position: relative;
+    top: 20px
+}
+
+.image2 {
+    position: relative;
+    top: -50%;
+}
+
+
+
+.title {
+    position: static;
+    top: 0px;
+    margin:100px 0px 0px 0px;
+}
